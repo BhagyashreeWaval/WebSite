@@ -1,0 +1,118 @@
+
+
+
+.header{
+background-color:#DDDDDD;
+overflow: auto;
+}
+
+.footer{
+background-color:#DDDDDD;
+overflow: auto;
+}
+
+.footerAddress{
+float:left;
+width:30%;
+padding: 1%;
+box-sizing: border-box;
+}
+
+.homeImg{
+width: 5%;
+}
+
+.phoneImg{
+width: 5%;
+}
+
+.footerContact{
+float:left;width:70%
+}
+
+.submitmessage{
+color: red;
+}
+
+.newsImg{
+width:100%;
+}
+
+.newsTitle{
+font-size: larger;
+}
+
+
+
+@media screen and (max-width:800px) {
+.footerAddress{
+width:100%;
+}
+
+.footerContact{
+width:100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      body {
+        padding:                     20px;
+    }
+
+    .box {
+        position:                   relative;
+        font-family:                sans-serif;
+        display:                    block;
+        width:                      100%;
+        height:                     7em;
+        overflow:                   hidden;
+    }
+    .box .text {
+        color:                      #333;
+        padding:                    20px;
+        /*width:                      204px;*/
+        overflow:                   hidden;
+        background:                 #ADD8E6;
+        font-size:                  .95em;
+        line-height:                1;
+        text-align:                 justify;
+    }
+
+    .box .text:after {
+        content:                    ' ';
+        position:                   absolute;
+        display:                    block;
+        width:                      100%;
+        height:                     1em;
+        bottom:                     0px;
+        left:                       0px;
+        background:                 #ADD8E6;
+    }
+
+    .box .text:before {
+        content:                    '...';
+        text-align:                 right;
+        position:                   absolute;
+        display:                    block;
+        width:                      2em;
+        height:                     1em;
+        bottom:                     1em;
+        right:                      20px;
+
+background: linear-gradient(to right,  #ADD8E6 0%,#ADD8E6  38%,#ADD8E6 99%);
+
+    }

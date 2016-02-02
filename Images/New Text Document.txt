@@ -1,0 +1,40 @@
+usersRef.child("ExecutiveVisits").set({
+Title: "Dennis Moore, President of Member Technology",
+
+  Description:"August was a month of great excitement at Sears Speaks. Dennis Moore, President of Member Technology, visited Sears India to meet everybody and to inaugurate the Bengaluru office. Dennis Moore, accompanied by the SLT, visited Bengaluru on the 19th of August to inaugurate the new office at the Embassy Tech Village on Sarjapur Road. The inauguration was announced across the cities of Pune and Bengaluru through the Print Media.Back in Pune the next day, Dennis Moore addressed his Leadership Connect: Town Hall with Dennis to an excited and curious audience. The Town Hall offered an open forum for associates to interact directly with Dennis Moore and have all their doubts put to rest. Dennis inspired everyone with his professional journey and details on what he learnt on the way. He urged all of us at India to deliver consistent, reliable, scalable and quality solutions. His vision for India is to get end-to-end solutions and services delivered in future.Apart from the finale of TechEdge which Dennis mentioned, along with some solutions that have a great scope, Dennis also liked the people practices of Sears India. The Town Hall ended with Dennis awarding the TechEdge and Aroha winners.",
+
+    Image: "Images/4.JPG"
+});
+
+
+
+usersRef.child("Bengaluru").set({
+Title: "Sears Holdings to open technology centre in Bengaluru",
+    Image:	"Images/2006_Sears.jpg",
+    Description: "Sears Holdings, an integrated retailer with stores across the United States today said it will open its second technology centre in the city.The centre will be set up at the Embassy Tech Park in Sarjapur  here and is currently awaiting regulatory clearances the company said in a release.The centre tentatively scheduled to open in September will be spearheaded by MD Alok Kumar who is also heading Sears's first development centre in Pune and will focus on developing solutions for Omni-channel retail it added.Sears Holdings said the unit in Bengaluru is spread across 15000 square feet and is going to be a Centre of Excellence with focus on product and platform development in the retail online and offline domain. Stating that Sears Holdings India has been at the forefront of developing its IT solutions and products it said the Pune centre is more than 1000 engineers strong and has been operational since 2009.Sears Holdings India focuses on enhancing our members experience through cutting edge technology. In the last five years our teams in India have generated immense value for Sears Holdings and its members and with this expansion we aim at enhancing this value further President of Member Technology at Sears Holdings Corporation Dennis Moore said.",
+});
+
+
+
+usersRef.child("InformationSecurity").set({
+ 
+    Title: "Achieve Information Security with Converged Infrastructures",
+
+Description:"Sears India, headquartered in Pune, is a provider of services to advice, transform and optimize business and technology processes of Sears retail chain. The company designs, builds, and supports systems that drive Business Intelligence and Analytics, Pricing and Marketing, E-Commerce, Mobile Engineering, Retail Stores Solutions and Supply Chain Management for Sears Holdings.",
+
+    Image: "Images/2.jpeg"
+  
+});
+
+
+
+usersRef.child("IndustryInteraction).set({
+
+    Title: 
+"Sudhir Salve Associate Director – Workforce Management and Talent acquisition Discussion.",
+
+Description:"Out of the 5 million engineering graduates that pass out every year, 3 million of them are from the IT sector and only 27% of them are employable, stated Sudhir, referring to data from NASSCOM. The IT industry has achieved an impressive revenue of $123 billion with the help of a 3.3 million workforce. By effectively using resources and employees, this revenue could be doubled to reach $246 billion. This could be done by adding another 1.2 million workforce - taking the workforce to 6.6 million will not be required.Encouraging fresh engineers to become more ambitious and determined, Sudhir suggested that each one of them must create their profiles like an ADVERT.Providing snapshots with numbers, metrics and business impact in the project they executed is of prime importance. He referred to the example of how we, as individuals, tend to invest in buying a product even after seeing a mere 5-second advertisement. It is all about the presentation!Further, Sudhir said that mentioning hobbies, and how they have helped you in your professional and personal lives both will also help. Fresh engineers should develop cognitive ability, wherein they try to understand their problems in bits, brush up their grasping power along with the ability to learn a new skill and always be curious to find solutions.Finding out one particular USP about yourself – maybe a skill, a passion, or a particular subject on which you have researched well enough can also be used as a very strong point. Every employer is interested in this. - Sudhir said.",
+
+    Image: "Images/3.JPG"
+ 
+});
