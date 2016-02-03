@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/SearsSite.css">
+<script type="text/javascript" src="js/Config.js" ></script>
+<script type="text/javascript" src="js/custom.js" ></script>
+</head>
+
+<body onload="fillBlogContent()">
+<div class="header"> <Center><h1 class="pageTitle"> Sears Holdings </h1><h2>India</h2></Center></div>
+
+<div id="middlecontainer" class="middleContainer" onload="loadContainer()">
+<center>
+<h3 id="title"></h3>
+
+	<div id="image">
+	</div>
+</center>
+	<div>
+		<p id="description" class="newPageText">
+		</p>
+	</div>
+</div>
+
+<footer class="footer"> 
+
+<div class="footerAddress">
+<h3>Sears Addresss</h3>
+<div>
+<img src="Images/home.png" class="homeImg"> EON Free Zone, Cluster C,Wing 2, 7th Floor,MIDC Kharadi Knowledge Park,Pune 411 014.
+</div>
+
+<div>
+<img src="Images/phone.png" class="phoneImg"> 020-67308500
+</div>
+</div>
+
+<div class="footerContact">
+<center>
+<h3>Contact Us</h3>
+<table>
+  <tr>
+    <td>Name</td>
+    <td><input type="text" title="name" id="name"></td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td>Email Id</td>
+    <td><input type="text" title="emailid" id="emailId"></td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td>Message</td>
+    <td><input type="text" title="message" id="message"></td> 
+    <td><button id="submitMessage" onclick="verifyMessage()"> Submit </button> </td>
+  </tr>
+
+</table>
+  <div id = "submitmessage" class="submitmessage"></div>
+</center>
+</div>
+
+
+</footer>
+</body>
+</html>

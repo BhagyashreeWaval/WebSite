@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial">
-<script type="text/javascript" src="js/firebase.js" ></script>
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" type="text/css" href="css/SearsSite.css">
+<script type="text/javascript" src="js/Config.js" ></script>
 <script type="text/javascript" src="js/custom.js" ></script>
 </head>
 
-<div class="header"> <Center><h1> Sears Holdings India </h1></Center></div>
+<body onload="loadContainer()">
+<div class="header"> <Center><h1 class="pageTitle"> Sears Holdings </h1><h2>India</h2></Center></div>
 
+<div class="middleContainer" onload="loadContainer()">
 
-
-<div class="middleContainer" style="background-color:#ADD8E6;overflow: auto;padding: 1%;" onload="loadContainer()">
-
-<div class="blogs" style="width:40%;float:left;padding-top: 2%;">
+<div class="blogs" >
+	<h3> Blogs</h3>
 	<div>
-	<img src="Images/blog1.jpg" style="width:50%">
-	<p style="text-align: justify;">
+	<img src="Images/blog1.jpg" class="blogImage">
+	<p class="text">
 	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 	montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 	fringilla vel,aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 	Integer tincidunt. Cras dapibus.	
 	</p>
 	</div>
 
 	<div>
-	<img src="Images/blog2.jpg" style="width:50%">
-	<p style="text-align: justify;">
+	<img src="Images/blog2.jpg" class="blogImage">
+	<p class="text">
 	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 	montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 		fringilla vel, 	aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 		pretium. 	Integer tincidunt. Cras dapibus.	
 	</p>	
 	</div>
 
 </div>
 
-<div id="Latestnews" class="Latestnews" style="width:60%;float: right;padding: 1%;box-sizing: border-box;padding-left: 4%;">
-
+<div id="Latestnews" class="Latestnews" >
+<h3> Recent News</h3>
 	
 
 </div>
 
 </div>
-
-
 
 
 <footer class="footer"> 
@@ -49,37 +47,36 @@
 <img src="Images/home.png" class="homeImg"> EON Free Zone, Cluster C,Wing 2, 7th Floor,MIDC Kharadi Knowledge Park,Pune 411 014.
 </div>
 
-<div>
-<img src="Images/phone.png" class="phoneImg"> 020-67308500
-</div>
+	<div>
+	<img src="Images/phone.png" class="phoneImg"> 020-67308500
+	</div>
 </div>
 
 <div class="footerContact">
 <center>
-<h3>Contact Us</h3>
-<table>
-  <tr>
+	<h3>Contact Us</h3>
+	<table>
+	<tr>
     <td>Name</td>
     <td><input type="text" title="name" id="name"></td> 
     <td></td>
-  </tr>
-  <tr>
+	</tr>
+	<tr>
     <td>Email Id</td>
     <td><input type="text" title="emailid" id="emailId"></td> 
     <td></td>
   </tr>
-  <tr>
+	<tr>
     <td>Message</td>
     <td><input type="text" title="message" id="message"></td> 
     <td><button id="submitMessage" onclick="verifyMessage()"> Submit </button> </td>
   </tr>
-
 </table>
-  <div id = "submitmessage" class="submitmessage"></div>
+	<div id = "submitmessage" class="submitmessage"></div>
 </center>
 </div>
 
 
 </footer>
-
+</body>
 </html>

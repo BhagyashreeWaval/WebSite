@@ -1,58 +1,36 @@
-function News(title,desc,image){
-
-
-this.Title=title;
-
-
-this.Desc=desc;
-
-
-this.Img=image;
-
-
-}
-
-
 function loadContainer(){
 
-var latest=new Array();
-
-var ref = new Firebase("https://blistering-inferno-5446.firebaseio.com/LatestNews");
-
-
-
-// Retrieve new posts as they are added to our database
-
-
-
-ref.on("child_added", function(snapshot, prevChildKey) {
-
-  
-				
-	var newPost = snapshot.val();
-  
-				
-	latest.push(new News(newPost.Title,newPost.Description,newPost.Image));
- 
-	 
-
-});
-
-
-
-
+var newsData = JSON.parse(news);
+var latest=newsData.LatestNews;
 for (var i = 0; i < latest.length; i++) {
 
-
-var elements="<div class=\"news\"> <p class=\"newsTitle\">"+latest[i].Title+"</p> <img class=\"newsImg\" src=\""+latest[i].Img+"\"> <div class=\"box\">  <div class=\"text\">"     + latest[i].Desc   +"</div></div></div>";
+var elements="<div class=\"news\"> <p class=\"newsTitle\">"+latest[i].Title+"</p> <img class=\"newsImg\" src=\""+latest[i].Image+"\"> <div class=\"box\">  <div class=\"text\">"     + latest[i].Description   +"</div></div><button id=\""+i+"\" class=\"readMore\" onclick=\"readMore("+i+")\">ReadMore</button></div>";
 
 document.getElementById("Latestnews").innerHTML+=elements;
-    
+}
+}
 
 
+
+function readMore(i)
+{  
+ sessionStorage.setItem('index', i);
+var url=window.location.href.split("/");
+url[url.length-1]="BlogInfo.html";
+var webpage= url.join("/");
+ window.open(webpage);
 
 }
 
+function fillBlogContent()
+{
+var index=sessionStorage.getItem('index');
+var newsData = JSON.parse(news);
+  var latest=newsData.LatestNews;
+  document.getElementById("title").innerHTML=latest[index].Title;
+ document.getElementById("image").innerHTML="<img class=\"newPageImage\" src=\""+latest[index].Image+"\">";
+  document.getElementById("description").innerHTML=latest[index].Description;
+ 
 }
 
 function verifyMessage()
